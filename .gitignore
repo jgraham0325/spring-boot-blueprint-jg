@@ -1,0 +1,19 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.log
+
+*.swp
+*.swo
+
+# allow gradle-wrapper into repo
+!/gradle/wrapper/gradle-wrapper.jar
+# exclude .gradle working directory
+.gradle
+
+build
+
+buildSrc/build
