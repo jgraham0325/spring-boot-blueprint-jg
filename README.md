@@ -25,11 +25,11 @@ This can be externalised by putting a custom application.properties in the same 
 Endpoints
 -----------
 
-*Static content:
-http://localhost:8083/
+* Static content:
+[http://localhost:8083/]
 
-*Rest end-point example:
-http://localhost:8083/api/v1/endpoint
+* Rest end-point example:
+[http://localhost:8083/api/v1/endpoint]
 
 Swagger UI Documentation
 -----------
