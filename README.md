@@ -26,12 +26,13 @@ Endpoints
 -----------
 
 * Static content:
-[http://localhost:8083/]
+[http://localhost:8083/](http://localhost:8083/)
 
 * Rest end-point example:
-[http://localhost:8083/api/v1/endpoint]
+[http://localhost:8083/api/v1/endpoint](http://localhost:8083/api/v1/endpoint)
 
-Swagger UI Documentation
------------
+* Actuator end-points (logs, etc):
+[http://localhost:8083/actuator](http://localhost:8083/actuator)
 
-For SwaggerUI see: [http://localhost:8083/swagger-ui.html](http://localhost:8083/swagger-ui.html)
+* SwaggerUI documentation: 
+[http://localhost:8083/swagger-ui.html](http://localhost:8083/swagger-ui.html)
