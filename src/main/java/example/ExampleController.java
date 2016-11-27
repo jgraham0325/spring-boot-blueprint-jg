@@ -4,7 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 public class ExampleController {
@@ -16,7 +19,8 @@ public class ExampleController {
 	@Value("${propValue1}")
 	private String propValue;
 
-	@RequestMapping("/endpoint")
+	@RequestMapping(path="/api/v1/endpoint", method=RequestMethod.GET)
+	@ApiOperation(value="endpoint short description",notes="some notes about endpoint")
 	public String index() throws Exception {
 		return "Endpoint is working..." + propValue;
 	}
@@ -26,7 +30,7 @@ public class ExampleController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("/exception-endpoint")
+	@RequestMapping(path="/api/v1/exception-endpoint", method=RequestMethod.GET)
 	public String exceptionEndpoint() throws Exception {
 
 		if (true) {
